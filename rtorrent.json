@@ -4,7 +4,8 @@
     "artifact": "https://github.com/mz2212/iocage-plugin-rtorrent-flood.git",
     "pkgs": [
         "tmux",
-        "rtorrent"
+        "rtorrent",
+        "nginx"
     ],
     "properties": {
         "nat": 1,
