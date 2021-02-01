@@ -1,5 +1,6 @@
 #!/bin/sh
 
+pw groupadd -n rtorrent -g 1000
 pw useradd rtorrent -g 1000 -m -u 1000 # Add a user of GID/UID 1000, to match truenas first user defaults.
 
 mv /root/.rtorrent.rc /home/rtorrent/.rtorrent.rc
