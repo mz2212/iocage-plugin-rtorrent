@@ -11,6 +11,8 @@ mv /root/.rtorrent.rc /home/rtorrent/.rtorrent.rc
 chmod 555 /usr/local/etc/rc.d/rtorrent
 sysrc -f /etc/rc.conf rtorrent_enable="YES"
 
+sysrc -f /etc/rc.conf nginx_enable="YES"
+
 # rTorrent Flood startup script
 #chmod 555 /usr/local/etc/rc.d/rtorrent_flood
 #sysrc -f /etc/rc.conf rtorrent_flood_enable="YES"
@@ -30,6 +32,7 @@ chown -R rtorrent /home/rtorrent
 
 # Start the service
 service rtorrent start
+service nginx start
 #service rtorrent_flood start
 
 #echo "Flood ui credentials" > /root/PLUGIN_INFO
