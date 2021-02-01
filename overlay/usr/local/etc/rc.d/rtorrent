@@ -18,7 +18,7 @@ rtorrent_start() {
 }
 
 rtorrent_stop() {
-	su rtorrent -c "/usr/local/bin/tmux send-keys -t rtorrent C-q"
+	su rtorrent -c "/usr/local/bin/tmux send-keys -t rtorrent C-c"
 }
 
 load_rc_config $name
